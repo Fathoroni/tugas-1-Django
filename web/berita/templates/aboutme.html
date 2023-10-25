@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}
+ABOUT ME
+{% endblock title %}
+
+{% block style %}
+<style>
+    body {
+        background-color: #ececec;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+
+    }
+    table {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    h4{
+        font-family: Arial, sans-serif;
+        color:#53d6f3;
+    }
+    h1{
+        color:#fd252c
+    }
+</style>
+{% endblock style %}
+
+{% block content %}
+<h1>ABOUT ME</h1>
+<h4>TENTANG SAYA</h4>
+<table border="2">
+    <thead>
+        <tr class="tr-1">
+            <td>NAMA</td>
+            <td>TETALA</td>
+            <td>ALAMAT</td>
+            <td>NPM</td>
+            <td>KELAS</td>
+        </tr>
+     </thead>
+    <tbody>
+        <tr>
+            <td>ACH.ATHOILLAH F A</td>
+            <td>PAMEKASAN,01-JANURAI-2023</td>
+            <td>TAMBUNG-PADEMAWU-PEMAKASAN</td>
+            <td>2022020100043</td>
+            <td>TI C22</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock content %}
+
+{% block menu %}
+<a href="{% url 'tugas'%}">HOME</a>
+{% endblock menu %}

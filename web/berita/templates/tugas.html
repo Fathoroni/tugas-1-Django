@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Website Sederhana
+{% endblock title %}
+
+{% block style %}
+<style>
+    body {
+        background-color: #ececec;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+    }
+    h1 {
+        color: #fd252c;
+    }
+    h4 {
+        color: #53d6f3;
+    }
+</style>
+{% endblock style %}
+
+{% block menu %}
+<a href="/">HOME</a>
+<a href="{% url 'aboutme' %}">ABOUT ME</a>
+<a href="{% url 'contentme' %}">CONTENT ME</a>
+{% endblock menu %}
+
+{% block content %}
+<h1>Selamat Datang di Website Saya</h1>
+<h4>Ini adalah website saya menggunakan Django dan HTMl</h4>
+<h4>Selamat belajar HTML!</h4>
+{% endblock content %}
+
